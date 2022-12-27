@@ -7,29 +7,47 @@
 </head>
 
 <body>
-	<h1>SignUp Form</h1>
-	<form action="">
+	<h1>Job Application Form</h1>
+	<form action="" method="post">
 	<label for="name"  id="name">Name*</label>
 	<input type="text" required placeholder="Name">
 	<br>
 	<label for="email"  id="email">Email*</label>
 	<input type="email" required placeholder="Email">
 	<br>
-	<label for="Gender">Gender*</label>
-	<select name="Select" required id="select">
-		<option value="Gender">Male</option>
-		<option value="Gender">Female</option>
-		<option value="Gender">Other</option>
+	<label for="gender">Gender*</label>
+	<br>
+	<label for="male" id="male">Male</label>
+	<input type="radio" name="gender" id="male" required>
+	<br>
+
+	<label for="female" id="female">Female</label>
+	<input type="radio" name="gender" id="female" required>
+	<br>
+
+	<label for="others" id="others">Others</label>
+	<input type="radio" name="gender" id="others" required>
+	<br>
+	<label for="laptop" class="laptop">Laptop Brand</label>
+	<select name="laptop" id="laptop">
+		<option value="apple">Apple</option>
+		<option value="apple">Asus</option>
+		<option value="apple">HP</option>
 	</select>
 	<br>
-	<label for="Phone Number">Phone Number*</label>
-	<input type="contact-no" required id="inputField" max="10" textmask="##########" row="1" pattern=".{10}" placeholder="Phone Number">
+	<label for="age">Age*</label>
+	<input type="number" name="age" id="age" required>
 	<br>
-	<label for="password" class="password">Password*</label>
+	<label for="dob">DOB*</label>
+	<input type="date" name="dob" id="dob" required>
+	<br>
+	<label for="password" id="password">Password*</label>
 	<input type="password" required>
 	<br>
-	<button>Submit button</button>
-
+	<label for="portfolio">Enter ypur portfolio link</label>
+	<input type="url" name="link" id="portfolio">
+	<br>
+	<button type="submit" id="button">Submit button</button>
 	</form>
     <script type="text/javascript" src="./script.js">
 </script>
